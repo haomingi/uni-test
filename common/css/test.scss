@@ -1,0 +1,13 @@
+@charset "UTF-8";
+// 牵扯到背景图的样式，都写在此文件中
+
+.bg-test {
+  // background: url($img-url + '/static/logo.png');
+  @include dev-img('/static/logo.png');
+	// background-size: 100% 100%;
+	// @if(process.env.NODE_ENV === 'production'){
+	// 	@include dev-imges('/static/logo.png')
+	// } @else{
+	// 	@include dev-img('/static/logo.png')
+	// }
+}

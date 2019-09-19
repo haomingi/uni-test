@@ -1,0 +1,20 @@
+@charset "UTF-8";
+// consider
+// 设置背景图片的域名地址，此处手动修改 --> $img-url !!!
+// 本地使用dev-img 已经上线的下次更改时候替换为pro-img
+// 本地
+$img-url: "";
+// 线上
+// $img-url: "https://mr.molbase.net/images/xcx/xms";
+
+@mixin dev-img($src) {
+	// /activity/invite/button-p.png
+	// background: url("https://mr.molbase.net/images/xcx/xms" + $src);
+	background: url($img-url + $src);
+	background-size: 100% 100%;
+}
+@mixin pro-img($src) {
+	// /activity/invite/button-p.png
+	background: url("https://mr.molbase.net/images/xcx/xms" + $src);
+	background-size: 100% 100%;
+}

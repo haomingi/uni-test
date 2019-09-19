@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "uni-img": "/components/img/img",
+    "style-img": "/components/img/style-img"
+  }
+}

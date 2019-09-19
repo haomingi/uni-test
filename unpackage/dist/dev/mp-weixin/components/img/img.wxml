@@ -1,0 +1,1 @@
+<view class="img"><image class="logo" src="{{imgUrl+urles}}"></image></view>

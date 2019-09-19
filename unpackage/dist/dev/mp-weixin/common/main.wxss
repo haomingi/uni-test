@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*每个页面公共css */
+/* 
+*	此处先使用这种方式，之后看能不能直接用引入js代码的方式
+* 打开iconfont项目-> Font class -> 打开css文件，把内容拷贝到这里
+* 把 //at. 替换为 https://at. ！！！！！！
+ */
+@font-face {font-family: "iconfont";
+  src: url('https://at.alicdn.com/t/font_1290974_bx98f5fw0ut.eot?t=1564475427796'); /* IE9 */
+  src: url('https://at.alicdn.com/t/font_1290974_bx98f5fw0ut.eot?t=1564475427796#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+  url('https://at.alicdn.com/t/font_1290974_bx98f5fw0ut.woff?t=1564475427796') format('woff'),
+  url('https://at.alicdn.com/t/font_1290974_bx98f5fw0ut.ttf?t=1564475427796') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('https://at.alicdn.com/t/font_1290974_bx98f5fw0ut.svg?t=1564475427796#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconzu:before {
+  content: "\E603";
+}
+.iconzu1:before {
+  content: "\E604";
+}
+.iconzu2:before {
+  content: "\E605";
+}
+.iconzu3:before {
+  content: "\E606";
+}
+.iconzu4:before {
+  content: "\E607";
+}
+.iconzu5:before {
+  content: "\E608";
+}
+.iconzu6:before {
+  content: "\E609";
+}
+.iconzu7:before {
+  content: "\E60B";
+}
+.iconzu8:before {
+  content: "\E60C";
+}
+.iconzu9:before {
+  content: "\E60D";
+}
+.iconsousuo:before {
+  content: "\E60E";
+}
+.iconzu10:before {
+  content: "\E60F";
+}
+.iconzu11:before {
+  content: "\E610";
+}
+.iconzu12:before {
+  content: "\E612";
+}
+.iconzu13:before {
+  content: "\E613";
+}
+.iconzu14:before {
+  content: "\E614";
+}
+.iconzu15:before {
+  content: "\E615";
+}
+.iconzu16:before {
+  content: "\E616";
+}
+.iconzu17:before {
+  content: "\E618";
+}
+.iconjianchagengxin:before {
+  content: "\E61A";
+}
+.iconzu18:before {
+  content: "\E61B";
+}
+.iconzu19:before {
+  content: "\E61C";
+}
+.iconzu20:before {
+  content: "\E61D";
+}
+.iconzu21:before {
+  content: "\E61E";
+}
+.iconzu22:before {
+  content: "\E61F";
+}
+.dn {
+  display: none !important;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.gray-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.mb-arr {
+  width: 25rpx;
+  height: 16rpx;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.mb-arr:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16rpx;
+    height: 16rpx;
+    border: 6rpx solid #ddd;
+    border-width: 0 6rpx 6rpx 0;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.mb-arr.arr-down:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -1px;
+    left: 2px;
+}
+.mb-arr.arr-up:before {
+    -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+            transform: rotate(225deg);
+    top: 5px;
+    left: 2px;
+}
+.mb-arr.arr-left:before {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    top: 2px;
+    left: 5px;
+}
+.rotate {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+}
+.rotate1 {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+}
+.justify {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.align {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.justify-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.overflow-hide {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.margin-top30 {
+  margin-top: 30rpx;
+}
+.margin-top40 {
+  margin-top: 40rpx;
+}
+.margin-bottom30 {
+  margin-bottom: 30rpx;
+}
+.margin-bottom20 {
+  margin-bottom: 20rpx;
+}
+.bg-test {
+  background: url("/static/logo.png");
+  background-size: 100% 100%;
+}
+

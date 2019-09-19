@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@mixin margin-top($size){
+	margin-top: $size + rpx;
+}
+@mixin margin-bottom($size){
+	margin-bottom: $size + rpx;
+}
+
+.dn{
+	display: none !important;
+}
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+.gray-bg {
+  position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+  background-color: #f5f5f5;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+// 清楚浮动
+.clearfix:after {
+  content: " ";
+  display: block;;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+// 直接写出来的-上下左右箭头
+.mb-arr{
+  width: 25rpx;
+  height: 16rpx;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  &:before{
+    content: "";
+    position: absolute;
+    left:0;
+    top:2px;
+    width:16rpx;
+    height: 16rpx;
+    border: 6rpx solid #ddd;
+    border-width: 0 6rpx 6rpx 0;
+    transform:rotate(-45deg);
+  }
+  &.arr-down{
+    &:before{
+      transform:rotate(45deg);
+      top:-1px;
+      left:2px;
+    }
+
+  }
+  &.arr-up{
+    &:before{
+      transform:rotate(225deg);
+      top:5px;
+      left:2px;
+    }
+  }
+  &.arr-left{
+    &:before{
+      transform:rotate(135deg);
+      top:2px;
+      left:5px;
+    }
+  }
+}
+
+// 只控制方向-旋转180度
+.rotate {
+  transform-origin: center center; //旋转中心要是正中间 才行
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: transform 0.2s; //过度时间 可调
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+}
+
+.rotate1 {
+  transform-origin: center center;
+  transform: rotate(0deg); //返回原点
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  -o-transition: -o-transform 0.2s;
+  -ms-transition: -ms-transform 0.2s;
+}
+
+// 水平垂直居中
+.justify {
+	display: flex;
+	justify-content: center;
+}
+.align {
+	display: flex;
+	align-items: center;
+}
+// 水平垂直居中多个图标入口并排展示-文字展示在列表下方
+.justify-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+// 溢出隐藏
+.overflow-hide {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.margin-top30 {
+  @include margin-top(30);
+}
+.margin-top40 {
+  @include margin-top(40);
+}
+.margin-bottom30 {
+  @include margin-bottom(30);
+}
+.margin-bottom20 {
+  @include margin-bottom(20);
+}
