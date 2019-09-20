@@ -7,6 +7,12 @@
 ## Build Setup
 
 ``` bash
+# install dependencies
+yarn
+
+# serve
+HbuilderX -> 运行
+
 # 注意！
 全局引入组件、过滤器有问题，只能在当前页面中引入。
 图标使用了iconfont。使用HbuilderX运行项目。

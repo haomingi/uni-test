@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" :class="{'rotate': rotateBool , 'rotate1': !rotateBool}" :src="imgUrl + '/static/logo.png'"></image>
+		<image class="logo" :class="{'rotate': rotateBool , 'rotate1': !rotateBool}" :src="imgUrl + '/static/logo.png'" />
 		<uni-img :urles="urles"></uni-img>
     <!-- <div class="bg-test"></div> -->
 		<view style="background-image: url('/static/logo.png')"></view>
@@ -15,7 +15,7 @@
 		<view class="uni-product-list">
 			<view class="uni-product" v-for="(product,index) in productList" :key="index">
 				<view class="image-view">
-					<image v-if="renderImage" class="uni-product-image" :src="product.image"></image>
+					<image v-if="renderImage" class="uni-product-image" :src="product.image" />
 				</view>
 				<view class="uni-product-title">{{product.title}}</view>
 				<view class="uni-product-price">
